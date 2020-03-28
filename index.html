@@ -1,0 +1,252 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelance Mantra</title>
+    <link rel="stylesheet" href="index-css.css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <img id="logo" src="logo.png" alt="LOGO">
+        <h1>Freelance Mantra</h1>
+        <input type="search" id="search_box" name="search" placeholder="Search" autocomplete="off">
+        <nav class="main-nav">
+          <a href="#" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">LOGIN</a>
+          <a href="#" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">SIGN UP</a>
+        </nav>
+        <div id="dropdown-nav">
+          <button type="button"><i class='fas fa-angle-double-down'></i></button>
+          <div id="dropdown">
+            <a href="#" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">LOGIN</a>
+            <a href="#" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">SIGN UP</a>
+          </div>
+        </div>
+      </header>
+
+      <div id="id01" class="modal">
+        <form class="modal-content animate" action="/action_page.php" method="post">
+          <div class="imgcontainer">
+            <h2>Log In</h2>
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          </div>
+
+          <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button type="submit">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+
+          </div>
+        </form>
+      </div>
+
+
+      <div id="id02" class="modal">
+        <form class="modal-content animate" action="/action_page.php" method="post">
+          <div class="imgcontainer">
+            <h2>Sign Up</h2>
+            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+          </div>
+
+          <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <label for="psw"><b>Repeat Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button type="submit">Sign Up</button>
+          </div>
+        </form>
+      </div>
+
+
+
+      <main>
+        <div id="intro">
+          <div id="intro_text">
+            <h2>Post your requirements and get work completed by freelancers</h2>
+            <p>
+              Are you a freelancer or do you own a business? Do you want to reach more and more customers
+               and make your business bigger, better and smarter? Find the perfect professionals that can help you solve all
+                your business problems, whether you need to build a good website or an app for your organization,
+                 you need a project manager or a content writer, a social media manager or any other need professional
+                  that can help you expand your reach to a bigger audience here.
+            </p>
+          </div>
+        </div>
+        <div class="categories">
+          <div class="cat_item cat_item1">
+            <h3>Health</h3>
+            <span>22 Questions, 24 Followers</span>
+          </div>
+          <div class="cat_item cat_item2">
+            <h3>Content Writing</h3>
+            <span>14 Questions, 34 Followers</span>
+          </div>
+          <div class="cat_item cat_item3">
+            <h3>Digital Marketing</h3>
+            <span>14 Questions, 45 Followers</span>
+          </div>
+          <div class="cat_item cat_item4">
+            <h3>Food Recipe</h3>
+            <span>9 Questions, 32 Followers</span>
+          </div>
+          <div class="cat_item cat_item5">
+            <h3>Website Dev</h3>
+            <span>25 Questions, 49 Followers</span>
+          </div>
+          <div class="cat_item cat_item6">
+            <h3>Tik Tok</h3>
+            <span>8 Questions, 24 Followers</span>
+          </div>
+          <div class="cat_item cat_item7">
+            <h3>Graphic Designing</h3>
+            <span>5 Questions, 30 Followers</span>
+          </div>
+          <div class="cat_item cat_item8">
+            <h3>Books</h3>
+            <span>4 Questions, 25 Followers</span>
+          </div>
+          <div class="cat_item cat_item9">
+            <h3>Start Ups</h3>
+            <span>4 Questions, 15 Followers</span>
+          </div>
+          <div class="cat_item cat_item10">
+            <h3>Jobs</h3>
+            <span>2 Questions, 25 Followers</span>
+          </div>
+          <div class="cat_item cat_item11">
+            <h3>Testing</h3>
+            <span>1 Questions, 21 Followers</span>
+          </div>
+          <div class="cat_item cat_item12">
+            <h3>Ethical Hacking</h3>
+            <span>15 Questions, 40 Followers</span>
+          </div>
+          <div class="cat_item cat_item13">
+            <h3>Tree Plantation</h3>
+            <span>1 Questions, 19 Followers</span>
+          </div>
+          <div class="cat_item cat_item14">
+            <h3>Furnishings</h3>
+            <span>0 Questions, 7 Followers</span>
+          </div>
+          <div class="cat_item cat_item15">
+            <h3>Marketing</h3>
+            <span>9 Questions, 33 Followers</span>
+          </div>
+        </div>
+
+        <div class="posts">
+          <section>
+            <div class="text">
+              <img src="user_icon.png"/>
+              <textarea placeholder="What's your question?"></textarea>
+              <input type="submit" value="post"/>
+            </div>
+          </section>
+          <div class="overlay"></div>
+          <nav class="post-nav">
+            <a href="#">Recent Questions</a>
+            <a href="#">Most Viewed</a>
+            <a href="#">No Answers</a>
+            <a href="#">Questions For You</a>
+            <a href="#">Polls</a>
+            <a href="#">Favorite Questions</a>
+            <a href="#">Most Answered</a>
+          </nav>
+        </div>
+        <div id="content">
+          <div class="question">
+            <img id="user_ic" src="user_icon.png"/>
+            <h5>Asked:</h5><span class="details"> 12 Feb, 2020</span> <h5> In:</h5> <span class="details">Health</span>
+            <h3>How to take care of ourselves during a pandemic like Corona Virus?</h3>
+            <p>The new coronavirus, COVID-19, has many of us glued to the news, concerned for loved ones,
+               and adapting our lives to deal with the changes the pandemic is having on our homes, schools, and work-places. It’s pretty tough.</p>
+            <img class="icons" src="https://img.icons8.com/dusk/64/000000/visible.png"/><span class="stats">Views</span>
+            <img class="icons" src="https://img.icons8.com/office/16/000000/comments.png"/><span class="stats">Answers</span>
+            <img class="icons" src="https://img.icons8.com/color/64/000000/friends.png"/><span class="stats">Followers</span>
+          </div>
+          <div class="question">
+            <img id="user_ic" src="user_icon.png"/>
+            <h5>Asked:</h5><span class="details"> 12 Feb, 2020</span> <h5> In:</h5> <span class="details">Health</span>
+            <h3>How to take care of ourselves during a pandemic like Corona Virus?</h3>
+            <p>The new coronavirus, COVID-19, has many of us glued to the news, concerned for loved ones,
+               and adapting our lives to deal with the changes the pandemic is having on our homes, schools, and work-places. It’s pretty tough.</p>
+            <img class="icons" src="https://img.icons8.com/dusk/64/000000/visible.png"/><span class="stats">Views</span>
+            <img class="icons" src="https://img.icons8.com/office/16/000000/comments.png"/><span class="stats">Answers</span>
+            <img class="icons" src="https://img.icons8.com/color/64/000000/friends.png"/><span class="stats">Followers</span>
+          </div>
+          <div class="question">
+            <img id="user_ic" src="user_icon.png"/>
+            <h5>Asked:</h5><span class="details"> 12 Feb, 2020</span> <h5> In:</h5> <span class="details">Health</span>
+            <h3>How to take care of ourselves during a pandemic like Corona Virus?</h3>
+            <p>The new coronavirus, COVID-19, has many of us glued to the news, concerned for loved ones,
+               and adapting our lives to deal with the changes the pandemic is having on our homes, schools, and work-places. It’s pretty tough.</p>
+            <img class="icons" src="https://img.icons8.com/dusk/64/000000/visible.png"/><span class="stats">Views</span>
+            <img class="icons" src="https://img.icons8.com/office/16/000000/comments.png"/><span class="stats">Answers</span>
+            <img class="icons" src="https://img.icons8.com/color/64/000000/friends.png"/><span class="stats">Followers</span>
+          </div>
+          <div class="question">
+            <img id="user_ic" src="user_icon.png"/>
+            <h5>Asked:</h5><span class="details"> 12 Feb, 2020</span> <h5> In:</h5> <span class="details">Health</span>
+            <h3>How to take care of ourselves during a pandemic like Corona Virus?</h3>
+            <p>The new coronavirus, COVID-19, has many of us glued to the news, concerned for loved ones,
+               and adapting our lives to deal with the changes the pandemic is having on our homes, schools, and work-places. It’s pretty tough.</p>
+            <img class="icons" src="https://img.icons8.com/dusk/64/000000/visible.png"/><span class="stats">Views</span>
+            <img class="icons" src="https://img.icons8.com/office/16/000000/comments.png"/><span class="stats">Answers</span>
+            <img class="icons" src="https://img.icons8.com/color/64/000000/friends.png"/><span class="stats">Followers</span>
+          </div>
+          <div class="question">
+            <img id="user_ic" src="user_icon.png"/>
+            <h5>Asked:</h5><span class="details"> 12 Feb, 2020</span> <h5> In:</h5> <span class="details">Health</span>
+            <h3>How to take care of ourselves during a pandemic like Corona Virus?</h3>
+            <p>The new coronavirus, COVID-19, has many of us glued to the news, concerned for loved ones,
+               and adapting our lives to deal with the changes the pandemic is having on our homes, schools, and work-places. It’s pretty tough.</p>
+            <img class="icons" src="https://img.icons8.com/dusk/64/000000/visible.png"/><span class="stats">Views</span>
+            <img class="icons" src="https://img.icons8.com/office/16/000000/comments.png"/><span class="stats">Answers</span>
+            <img class="icons" src="https://img.icons8.com/color/64/000000/friends.png"/><span class="stats">Followers</span>
+          </div>
+          <div class="question">
+            <img id="user_ic" src="user_icon.png"/>
+            <h5>Asked:</h5><span class="details"> 12 Feb, 2020</span> <h5> In:</h5> <span class="details">Health</span>
+            <h3>How to take care of ourselves during a pandemic like Corona Virus?</h3>
+            <p>The new coronavirus, COVID-19, has many of us glued to the news, concerned for loved ones,
+               and adapting our lives to deal with the changes the pandemic is having on our homes, schools, and work-places. It’s pretty tough.</p>
+            <img class="icons" src="https://img.icons8.com/dusk/64/000000/visible.png"/><span class="stats">Views</span>
+            <img class="icons" src="https://img.icons8.com/office/16/000000/comments.png"/><span class="stats">Answers</span>
+            <img class="icons" src="https://img.icons8.com/color/64/000000/friends.png"/><span class="stats">Followers</span>
+          </div>
+        </div>
+      </main>
+    </div>
+      <footer>
+        <p>&copy;  Created by Nitish</p>
+        <div id="social">
+          <h6>Follow us:</h6>
+          <div class="social-icons">
+              <a href="" target="_blank" ><img src="https://img.icons8.com/doodle/48/000000/facebook-new.png"/></a>
+              <a href="" target="_blank" ><img src="https://img.icons8.com/doodle/48/000000/twitter.png"/></a>
+              <a href="" target="_blank" ><img src="https://img.icons8.com/doodle/48/000000/instagram-new.png"/></a>
+          </div>
+        </div>
+      </footer>
+      <script src="index.js"></script>
+  </body>
+</html>
